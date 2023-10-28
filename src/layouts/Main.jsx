@@ -8,7 +8,7 @@ import Header from '../components/Header'
 
 const Main = () => {
   return (
-    <div className=' page bg-site text-white bg-cover bg-no-repeat font-sora relative'>
+    <div className=' page bg-site text-white bg-cover bg-no-repeat bg-center font-sora relative'>
         <TopLeftImg />
         <Nav />
         <Header />

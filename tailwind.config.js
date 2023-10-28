@@ -30,7 +30,7 @@ export default {
         explosion: 'url("./src/assets/bg-explosion.png")',
         circles: 'url("./src/assets/bg-circles.png")',
         circleStar: 'url("./src/assets/circle-star.svg")',
-        site: 'url("./src/assets/site-bg.svg")',
+        site: 'url("./src/assets/site-bg.jpg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
@@ -38,6 +38,9 @@ export default {
       fontFamily: {
         sora: "'Sora', sans-serif",
       },
+      backdropBlur: {
+        xs: '2px',
+      }
     },
   },
   container: {
