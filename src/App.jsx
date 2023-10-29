@@ -7,6 +7,7 @@ import Main from './layouts/Main';
 
 // Pages
 import Home from './pages/Home'
+import About from './pages/About'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About />
       }
     ]
   }
