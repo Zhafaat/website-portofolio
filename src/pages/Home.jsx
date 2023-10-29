@@ -31,13 +31,12 @@ const Home = () => {
             </div>
         </div>
         {/* image */}
-        <div className=' w-[1200px] h-full absolute z-0 right-0 bottom-0'>
+        <div className=' w-full h-full absolute z-0 right-0 bottom-0'>
             {/* bg img */}
-            <div></div>
             <ParticlesContainer />
-            <div>
-                <Avatar />
-            </div>
+        </div>
+        <div className=" w-full h-full max-w-[600px] max-h-[700px] absolute z-10 brightness-75 hover:brightness-100 bottom-0 lg:right-[1%]">
+            <Avatar />
         </div>
     </div>
   )
