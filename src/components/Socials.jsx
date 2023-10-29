@@ -1,5 +1,5 @@
 // icons
-import { RiYoutubeLine, RiInboxLine, RiFacebookLine, RiDribbbleLine, RiBehanceLine, RiPinterestLine } from 'react-icons/ri'
+import { RiLinkedinLine, RiWhatsappLine, RiFacebookLine, RiGithubLine, RiMailLine, RiInstagramLine } from 'react-icons/ri'
 
 // react-router-dom
 import { Link } from 'react-router-dom'
@@ -7,24 +7,24 @@ import { Link } from 'react-router-dom'
 const Socials = () => {
   return (
     <div className=' flex items-center gap-x-5 text-lg'>
-      <Link href={''} className=' hover:text-accent transition-all duration-300'>
-        <RiYoutubeLine />
-      </Link>
-      <Link href={''} className=' hover:text-accent transition-all duration-300'>
-        <RiInboxLine />
-      </Link>
-      <Link href={''} className=' hover:text-accent transition-all duration-300'>
+      <a href='https://www.instagram.com/zhafaat_2122/' target='blank' className=' hover:text-accent transition-all duration-300'>
+        <RiInstagramLine />
+      </a>
+      <a href={'https://www.linkedin.com/in/zhafaat-rahimi-zainal/'} target='blank' className=' hover:text-accent transition-all duration-300'>
+        <RiLinkedinLine />
+      </a>
+      <a href={'https://www.facebook.com/aat.aat.92102/'} target='blank' className=' hover:text-accent transition-all duration-300'>
         <RiFacebookLine />
-      </Link>
-      <Link href={''} className=' hover:text-accent transition-all duration-300'>
-        <RiDribbbleLine />
-      </Link>
-      <Link href={''} className=' hover:text-accent transition-all duration-300'>
-        <RiBehanceLine />
-      </Link>
-      <Link href={''} className=' hover:text-accent transition-all duration-300'>
-        <RiPinterestLine />
-      </Link>
+      </a>
+      <a href={'https://api.whatsapp.com/send/?phone=%2B6282216709879&text&type=phone_number&app_absent=0'} target='blank' className=' hover:text-accent transition-all duration-300'>
+        <RiWhatsappLine />
+      </a>
+      <a href={'https://github.com/Zhafaat'} target='blank' className=' hover:text-accent transition-all duration-300'>
+        <RiGithubLine />
+      </a>
+      <a href="mailto:zhafaatrahimi18@gmail.com?subject=Email%20Website&body=First%20time%20contacting%20you" target='blank' className=' hover:text-accent transition-all duration-300'>
+        <RiMailLine />
+      </a>
       
     </div>
   )

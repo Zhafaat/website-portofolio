@@ -32,7 +32,7 @@ const Home = () => {
                     initial='hidden'
                     animate='show'
                     exit='hidden'
-                    className=" max-w-xl hidden xl:block mx-auto xl:mx-0 mb-10"
+                    className=" max-w-xl hidden xl:block mx-auto xl:mx-0 mb-10 font-semibold"
                 >
                 In today's digital era, web development is the foundation of business change and online transformation. As a web development team, we understand the importance of digitization and automation. We invite you to explore our portfolio, showcasing a variety of projects that demonstrate our dedication and innovation. From impressive websites to advanced applications, we're here to help you harness the full potential of the digital age. Welcome to the ever-evolving world of web development.
                 </motion.p>
