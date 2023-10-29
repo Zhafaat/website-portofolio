@@ -97,6 +97,10 @@ import CountUp from 'react-countup'
 // react
 import { useState } from "react";
 
+// framer motion 
+import { motion } from 'framer-motion';
+import { fadeIn } from '../helper/variants'
+
 const About = () => {
     const [index, setIndex] = useState(0)
 
@@ -105,15 +109,33 @@ const About = () => {
         <Circles />
         <div className=' container mx-auto h-full flex flex-col xl:flex-row items-center justify-center gap-x-6 overflow-y-auto pb-20 xl:pb-5'>
             {/* text */}
-            <div className='flex-1 flex flex-col'>
-                <h2 className=' h2'>
+            <div className='flex-1 flex flex-col z-10'>
+                <motion.h2 
+                    className=' h2 cursor-text'
+                    variants={fadeIn('right', 0.2)}
+                    initial='hidden'
+                    animate='show'
+                    exit='hidden'
+                >
                     Captivating <span className=' text-accent'>strories</span> birdth magnificent designs.
-                </h2>
-                <p className=' max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2'>
+                </motion.h2>
+                <motion.p 
+                    className=' max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2'
+                    variants={fadeIn('right', 0.4)}
+                    initial='hidden'
+                    animate='show'
+                    exit='hidden'
+                >
                     10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, counsulted for startups, and collaborated on digital products for business and consumer use.
-                </p>
+                </motion.p>
                 {/* counters */}
-                <div className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
+                <motion.div 
+                    className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
+                    variants={fadeIn('right', 0.6)}
+                    initial='hidden'
+                    animate='show'
+                    exit='hidden'
+                >
                     <div className=' flex flex-1 xl:gap-x-6'>
                         {/* experience */}
                         <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
@@ -144,10 +166,16 @@ const About = () => {
                             <div className=' text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>wining awards</div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
             {/* info */}
-            <div className=" flex flex-col w-full xl:max-w-[48%] h-[480px]">
+            <motion.div 
+                className=" flex flex-col w-full xl:max-w-[48%] h-[480px] pt-0 xl:pt-5"
+                variants={fadeIn('left', 0.2)}
+                    initial='hidden'
+                    animate='show'
+                    exit='hidden'
+            >
                 <div className=" flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
                     {aboutData.map((item, itemIndex) => {
                         return (
@@ -161,25 +189,28 @@ const About = () => {
                         )
                     })}
                 </div>
-                <div>
+                <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
                     {aboutData[index].info.map((item, itemIndex) => {
                         return (
-                            <div key={itemIndex}>
+                            <div 
+                                key={itemIndex}
+                                className=" flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"    
+                            >
                                 {/* title */}
-                                <div>{item.title}</div>
-                                <div>-</div>
+                                <div className=" font-light mb-2 md:mb-0">{item.title}</div>
+                                <div className=" hidden xl:flex">-</div>
                                 <div>{item.stage}</div>
-                                <div>
+                                <div className=" flex gap-x-4">
                                     {/* icons */}
                                     {item.icons?.map((icon, iconIndex) => {
-                                        return <div key={iconIndex}>{icon}</div>
+                                        return <div key={iconIndex} className=" text-2xl text-white">{icon}</div>
                                     })}
                                 </div>
                             </div>
                         )
                     })}
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
   )
