@@ -107,7 +107,7 @@ const About = () => {
   return (
     <div className=' h-full bg-primary/30 pt-[150px] lg:pt-[100px] text-center xl:text-left'>
         <Circles />
-        <div className=' container mx-auto h-full flex flex-col xl:flex-row items-center justify-center gap-x-6 overflow-y-auto pb-20 xl:pb-5'>
+        <div className=' container mx-auto h-full flex flex-col xl:flex-row items-center justify-center gap-x-6 pb-20 xl:pb-5'>
             {/* text */}
             <div className='flex-1 flex flex-col z-10'>
                 <motion.h2 

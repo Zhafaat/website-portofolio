@@ -12,11 +12,8 @@ import { fadeIn } from '../helper/variants'
 
 const Home = () => {
   return (
-    <motion.div 
+    <div 
         className=" h-full bg-primary/60 m-0"
-        initial={{opacity: 0 }}
-        animate={{opacity: 1 }}
-        exit={{opacity: 0 }}
     >
         {/* text */}
         <div className=" w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/30 pt-[150px] lg:pt-[100px] relative z-10">
@@ -85,7 +82,7 @@ const Home = () => {
         >
             <Avatar />
         </motion.div>
-    </motion.div>
+    </div>
   )
 }
 
