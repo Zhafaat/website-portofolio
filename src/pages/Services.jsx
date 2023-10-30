@@ -7,7 +7,7 @@ const Services = () => {
     <div className=' h-full bg-primary/30'>
         <Circles />
         <div className=' h-full container mx-auto pt-[150px] lg:pt-[100px]'>
-            <div className=' h-full flex flex-col xl:flex-row gap-x-8 overflow-y-auto pb-24 xl:pb-0'>
+            <div className=' h-full flex flex-col xl:items-center xl:flex-row gap-x-8 overflow-y-auto pb-24 xl:pb-0'>
                 {/* text */}
                 <div className=' text-center xl:text-left flex xl:w-[30vm] flex-col mb-4 xl:mb-0'>
                     <h2 className=' h2'>
@@ -18,7 +18,7 @@ const Services = () => {
                     </p>
                 </div>
                 {/* slider */}
-                <div className=' w-full xl:max-w-[65%]'>
+                <div className=' w-full bg-1 xl:max-w-[65%]'>
                     <ServiceSlider />
                 </div>
             </div>

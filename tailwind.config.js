@@ -25,6 +25,9 @@ export default {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
+        G: 'rgb(190 242 100)',
+        B: 'rgb(147 197 253)',
+        R: 'rgb(252 165 165)',
       },
       backgroundImage: {
         explosion: 'url("./src/assets/bg-explosion.png")',

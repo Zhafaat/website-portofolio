@@ -81,8 +81,8 @@ const ServiceSlider = () => {
                             {item.icon}
                         </div>
                         {/* title & desc */}
-                        <div className=' mb-8 '>
-                            <div className=' mb-2 text-lg'>{item.title}</div>
+                        <div className=' mb-8'>
+                            <div className=' mb-2 text-lg group-hover:text-accent'>{item.title}</div>
                             <div className=' max-w-[350px] leading-normal'>{item.description}</div>
                         </div>
                         {/* arrow */}
