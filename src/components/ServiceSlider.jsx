@@ -21,31 +21,31 @@ import {
   
   // data
   const serviceData = [
-    {
-      icon: <RxCrop />,
-      title: 'Branding',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      icon: <RxPencil2 />,
-      title: 'Design',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      icon: <RxDesktop />,
-      title: 'Development',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      icon: <RxReader />,
-      title: 'Copywriting',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      icon: <RxRocket />,
-      title: 'SEO',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
+        {
+          icon: <RxPencil2 />,
+          title: 'Design',
+          description: `Web developers must ensure that the website design is responsive and meets high-quality display standards.`,
+        },
+        {
+            icon: <RxDesktop />,
+        title: 'Development',
+        description: `Development involves the process of coding and the technical development of websites, including programming, database management, and user interaction handling.`,
+        },  
+        { 
+            icon: <RxReader />,
+            title: 'Copywriting',
+            description: `Copywriting encompasses product descriptions, company information, articles, and other textual elements presented to users.`
+        },
+        {       
+        icon: <RxCrop />,
+        title: 'Branding',
+        description: `Web developers often collaborate with graphic designers to integrate online brand identity elements into the website to align with the brand's identity.`,
+        },
+        // {
+    //   icon: <RxRocket />,
+    //   title: 'SEO',
+    //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    // },
   ];
 
 const ServiceSlider = () => {
@@ -57,6 +57,10 @@ const ServiceSlider = () => {
                 spaceBetween: 15
             },
             640: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            1200: {
                 slidesPerView: 3,
                 spaceBetween: 15
             }
@@ -66,24 +70,24 @@ const ServiceSlider = () => {
             clickable: true
         }}
         modules={[FreeMode, Pagination]}
-        className=' h-[240px] sm:h-[340px]'
+        className=' h-[300px] sm:h-[420px] xl:h-[440px]'
     >
         {serviceData.map((item, index) => {
             return (
                 <SwiperSlide key={index}>
-                    <div>
+                    <div className=' bg-[rgba(65, 47, 123, 0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
                         {/* icon */}
-                        <div>
+                        <div className=' text-4xl text-accent mb-4'>
                             {item.icon}
                         </div>
                         {/* title & desc */}
-                        <div>
-                            <div>{item.title}</div>
-                            <div>{item.description}</div>
+                        <div className=' mb-8 '>
+                            <div className=' mb-2 text-lg'>{item.title}</div>
+                            <div className=' max-w-[350px] leading-normal'>{item.description}</div>
                         </div>
                         {/* arrow */}
-                        <div>
-                            <RxArrowTopRight />
+                        <div className=' text-3xl'>
+                            <RxArrowTopRight className=' group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
                         </div>
                     </div>
                 </SwiperSlide>
