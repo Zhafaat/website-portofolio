@@ -9,10 +9,11 @@ import {
   } from "react-icons/fa";
   
   import {
-    SiNextdotjs,
-    SiFramer,
-    SiAdobexd,
-    SiAdobephotoshop,
+    SiNodedotjs,
+    SiSequelize,
+    SiPostgresql,
+    SiTailwindcss,
+    SiExpress
   } from "react-icons/si";
   
   
@@ -22,68 +23,67 @@ import {
       title: 'skills',
       info: [
         {
-          title: 'Web Development',
+          title: 'FrontEnd Web',
           icons: [
             <FaHtml5 />,
             <FaCss3 />,
             <FaJs />,
             <FaReact />,
-            <SiNextdotjs />,
-            <SiFramer />,
-            <FaWordpress />,
+            <SiTailwindcss />,
           ],
         },
         {
-          title: 'UI/UX Design',
-          icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+          title: 'BackEnd Web',
+          icons: [
+            <SiNodedotjs />,
+            <SiPostgresql />,
+            <SiSequelize />,
+            <SiExpress />,
+          ],
         },
       ],
     },
     {
       title: 'awards',
       info: [
-        {
-          title: 'Webby Awards - Honoree',
-          stage: '2011 - 2012',
-        },
-        {
-          title: 'Adobe Design Achievement Awards - Finalist',
-          stage: '2009 - 2010',
-        },
+        // {
+        //   title: 'Webby Awards - Honoree',
+        //   stage: '2011 - 2012',
+        // },
+        // {
+        //   title: 'Adobe Design Achievement Awards - Finalist',
+        //   stage: '2009 - 2010',
+        // },
       ],
     },
     {
       title: 'experience',
       info: [
         {
-          title: 'UX/UI Designer - XYZ Company',
-          stage: '2012 - 2023',
+          title: 'Web Developer - Freelance',
+          stage: '2022 - 2023',
         },
-        {
-          title: 'Web Developer - ABC Agency',
-          stage: '2010 - 2012',
-        },
-        {
-          title: 'Intern - DEF Corporation',
-          stage: '2008 - 2010',
-        },
+        // {
+        //   title: 'Web Developer - STIBA Makassar',
+        //   stage: '2023',
+        // }
       ],
     },
     {
       title: 'credentials',
       info: [
+        // {
+        //   title: 'Web Development - ABC University, LA, CA',
+        //   stage: '2011',
+        // },
         {
-          title: 'Web Development - ABC University, LA, CA',
-          stage: '2011',
+          title: 'Bachelor of Science in Physics - Hasanuddin University',
+          stage: '2022',
         },
-        {
-          title: 'Computer Science Diploma - AV Technical Institute',
-          stage: '2009',
-        },
-        {
-          title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-          stage: '2006',
-        },
+        // {
+        //   title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+        //   stage: '2006',
+        // },
       ],
     },
   ];
@@ -117,7 +117,7 @@ const About = () => {
                     animate='show'
                     exit='hidden'
                 >
-                    Captivating <span className=' text-accent'>strories</span> birdth magnificent designs.
+                    From great <span className=" text-accent">stories</span> emerge amazing creations.
                 </motion.h2>
                 <motion.p 
                     className=' max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2'
@@ -126,7 +126,7 @@ const About = () => {
                     animate='show'
                     exit='hidden'
                 >
-                    10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, counsulted for startups, and collaborated on digital products for business and consumer use.
+                    One year ago, I embarked on my journey in the programming world as a web developer. Since then, I have worked on websites for a private university and collaborated on digital products for both business and consumer purposes.
                 </motion.p>
                 {/* counters */}
                 <motion.div 
@@ -140,31 +140,31 @@ const About = () => {
                         {/* experience */}
                         <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                             <div className=' text-2xl xl:text-4xl font-extrabold text-accent mv-2'>
-                                <CountUp start={0} end={10} duration={5} /> +
+                                <CountUp start={0} end={1} duration={5} /> +
                             </div>
                             <div className=' text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>years of experience</div>
                         </div>
                         {/* clients */}
-                        <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                        {/* <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                             <div className=' text-2xl xl:text-4xl font-extrabold text-accent mv-2'>
-                                <CountUp start={0} end={250} duration={5} /> +
+                                <CountUp start={0} end={0} duration={5} /> +
                             </div>
                             <div className=' text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied clients</div>
-                        </div>
+                        </div> */}
                         {/* projects */}
                         <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                             <div className=' text-2xl xl:text-4xl font-extrabold text-accent mv-2'>
-                                <CountUp start={0} end={650} duration={5} /> +
+                                <CountUp start={0} end={10} duration={5} /> +
                             </div>
                             <div className=' text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>finished projects</div>
                         </div>
                         {/* awards */}
-                        <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                        {/* <div className=' relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                             <div className=' text-2xl xl:text-4xl font-extrabold text-accent mv-2'>
-                                <CountUp start={0} end={8} duration={5} /> +
+                                <CountUp start={0} end={0} duration={5} /> +
                             </div>
                             <div className=' text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>wining awards</div>
-                        </div>
+                        </div> */}
                     </div>
                 </motion.div>
             </div>

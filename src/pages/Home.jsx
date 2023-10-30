@@ -12,7 +12,12 @@ import { fadeIn } from '../helper/variants'
 
 const Home = () => {
   return (
-    <div className=" h-full bg-primary/60 m-0">
+    <motion.div 
+        className=" h-full bg-primary/60 m-0"
+        initial={{opacity: 0 }}
+        animate={{opacity: 1 }}
+        exit={{opacity: 0 }}
+    >
         {/* text */}
         <div className=" w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/30 pt-[150px] lg:pt-[100px] relative z-10">
             <div className=" flex flex-col overflow-y-auto text-center xl:text-left h-full container mx-auto pb-24 xl:pb-5">
@@ -80,7 +85,7 @@ const Home = () => {
         >
             <Avatar />
         </motion.div>
-    </div>
+    </motion.div>
   )
 }
 

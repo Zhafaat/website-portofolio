@@ -1,6 +1,6 @@
 
 // react-router-dom
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Routes, useLocation } from "react-router-dom";
 
 // Layouts
 import Main from './layouts/Main';
@@ -8,6 +8,8 @@ import Main from './layouts/Main';
 // Pages
 import Home from './pages/Home'
 import About from './pages/About'
+import Transition from "./components/Transition";
+import { AnimatePresence } from "framer-motion";
 
 const router = createBrowserRouter([
   {
@@ -27,9 +29,12 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+
   return (
     <div>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}>
+        <Transition />
+      </RouterProvider>
     </div>
   )
 }
