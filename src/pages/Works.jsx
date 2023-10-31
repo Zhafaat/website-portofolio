@@ -1,5 +1,3 @@
-import React from 'react'
-
 // components
 import Circles from '../components/Circles'
 import WorkSlider from '../components/WorkSlider'

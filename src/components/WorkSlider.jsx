@@ -1,47 +1,110 @@
-// assets
-
 // data
 const workSlides = {
     slides: [
       {
         images: [
           {
-            title: 'title',
-            path: 'thumb1.jpg',
+            title: 'Modern App',
+            path: 'projectA1.png',
           },
           {
-            title: 'title',
-            path: 'thumb2.jpg',
+            title: 'Modern App',
+            path: 'projectA2.png',
           },
           {
-            title: 'title',
-            path: 'thumb3.jpg',
+            title: 'Modern App',
+            path: 'projectA3.png',
           },
           {
-            title: 'title',
-            path: 'thumb4.jpg',
+            title: 'Modern App',
+            path: 'projectA4.png',
           },
         ],
+        link: 'https://modern-app-900d3.firebaseapp.com/'
       },
       {
         images: [
           {
-            title: 'title',
-            path: 'thumb4.jpg',
+            title: 'Budged App',
+            path: 'projectB1.png',
           },
           {
-            title: 'title',
-            path: 'thumb1.jpg',
+            title: 'Budged App',
+            path: 'projectB2.png',
           },
           {
-            title: 'title',
-            path: 'thumb2.jpg',
+            title: 'Budged App',
+            path: 'projectB3.png',
           },
           {
-            title: 'title',
-            path: 'thumb3.jpg',
+            title: 'Budged App',
+            path: 'projectB4.png',
           },
         ],
+        link: 'https://budget-app-e806d.firebaseapp.com/'
+      },
+      {
+        images: [
+          {
+            title: 'Calendar App',
+            path: 'projectC1.png',
+          },
+          {
+            title: 'Calendar App',
+            path: 'projectC2.png',
+          },
+          {
+            title: 'Calendar App',
+            path: 'projectC3.png',
+          },
+          {
+            title: 'Calendar App',
+            path: 'projectC4.png',
+          },
+        ],
+        link: 'https://calendar-app-39114.firebaseapp.com/'
+      },
+      {
+        images: [
+          {
+            title: 'Dananz App',
+            path: 'projectD1.png',
+          },
+          {
+            title: 'Dananz App',
+            path: 'projectD2.png',
+          },
+          {
+            title: 'Dananz App',
+            path: 'projectD3.png',
+          },
+          {
+            title: 'Dananz App',
+            path: 'projectD4.png',
+          },
+        ],
+        link: 'https://dananz-da9ba.firebaseapp.com/'
+      },
+      {
+        images: [
+          {
+            title: 'Office App',
+            path: 'projectE1.png',
+          },
+          {
+            title: 'Office App',
+            path: 'projectE2.png',
+          },
+          {
+            title: 'Office App',
+            path: 'projectE3.png',
+          },
+          {
+            title: 'Office App',
+            path: 'projectE4.png',
+          },
+        ],
+        link: 'https://ntx-test-f06c6.firebaseapp.com/'
       },
     ],
   };
@@ -69,6 +132,7 @@ const WorkSlider = () => {
             return (
                 <SwiperSlide key={slideIndex}>
                     <div className=' grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+
                         {slide.images.map((image, imageIndex) => {
                             return (
                                 <div 
@@ -81,14 +145,16 @@ const WorkSlider = () => {
                                         <div className=' absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                                         {/* title */}
                                         <div className=' absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-                                            <div className=' flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                                                {/* title part 1 */}
-                                                <div className=' delay-100'>LIVE</div>
-                                                {/* title part 2 */}
-                                                <div className=' translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>PROJECT</div>
-                                                {/* icon */}
-                                                <div className=' text-xl translate-y-[500%] text-xl group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /></div>
-                                            </div>
+                                            <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                                                <div className=' flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                                                    {/* title part 1 */}
+                                                    <div className=' delay-100'>{image.title}</div>
+                                                    {/* title part 2 */}
+                                                    <div className=' translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>PROJECT</div>
+                                                    {/* icon */}
+                                                    <div className=' text-xl translate-y-[500%] text-xl group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /></div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
