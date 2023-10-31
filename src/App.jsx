@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from "./pages/Services";
 import Works from "./pages/Works";
+import Testimonials from "./pages/Testimonials";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/work",
         element: <Works />
+      },
+      {
+        path: "/testimonials",
+        element:<Testimonials />
       }
     ]
   }
