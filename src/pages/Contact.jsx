@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <div className=' h-full bg-primary/30'>
-        <div className=' container mx-auto text-center xl:text-left h-full pt-[150px] xl:pt-[100px] pb-24'>
+        <div className=' container mx-auto text-center xl:text-left h-full pt-[150px] xl:pt-[100px] pb-24 xl:pb-5'>
             <div className=' h-full flex flex-col overflow-y-auto'>
                 {/* text & form */}
                 <div className=' container m-auto w-full max-w-[700px]'>

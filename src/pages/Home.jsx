@@ -17,7 +17,7 @@ const Home = () => {
     >
         {/* text */}
         <div className=" w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/30 relative z-10 pt-[150px] lg:pt-[100px] pb-24 xl:pb-3">
-            <div className=" flex overflow-y-auto text-center xl:text-left h-full container mx-auto">
+            <div className=" flex overflow-y-auto text-center xl:text-left h-full mx-auto">
                 <div className=" container m-auto flex flex-col">
                     {/* title  */}
                     <motion.h1

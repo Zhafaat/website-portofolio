@@ -7,8 +7,8 @@ import TestimonialSlider from '../components/TestimonialSlider'
 const Testimonials = () => {
   return (
     <div className=' h-full bg-primary/30 text-center'>
-      <div className=' container mx-auto h-full pt-[150px] xl:pt-[100px] pb-20'>
-        <div className=' h-full flex flex-col overflow-y-auto pb-0'>
+      <div className=' w-full h-full pt-[150px] xl:pt-[100px] pb-20 xl:pb-0'>
+        <div className=' h-full flex flex-col overflow-y-auto pb-0 mx-auto'>
           <div className=' container m-auto '>
             {/* title */}
             <motion.h2 
