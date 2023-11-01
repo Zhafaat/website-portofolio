@@ -22,9 +22,9 @@ const Socials = () => {
       <a href={'https://github.com/Zhafaat'} target='blank' className=' hover:text-accent transition-all duration-300'>
         <RiGithubLine />
       </a>
-      <a href="mailto:zhafaatrahimi18@gmail.com?subject=Email%20Website&body=First%20time%20contacting%20you" target='blank' className=' hover:text-accent transition-all duration-300'>
+      <Link to={'/contact'} className=' hover:text-accent transition-all duration-300'>
         <RiMailLine />
-      </a>
+      </Link>
       
     </div>
   )
