@@ -23,9 +23,10 @@ const Contact = () => {
           }, (error) => {
               console.log(error.text);
           });
-        
+
         e.target.reset()
     }
+
 
   return (
     <div className=' h-full bg-primary/30'>
