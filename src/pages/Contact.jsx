@@ -10,6 +10,7 @@ import { useRef } from 'react'
 
 //emailjs
 import emailjs from '@emailjs/browser';
+import Circles from '../components/Circles';
 
 const Contact = () => {
     const form = useRef()
@@ -30,6 +31,7 @@ const Contact = () => {
 
   return (
     <div className=' w-full h-full bg-primary/30 pt-[150px] xl:pt-[100px] pb-20 xl:pb-5'>
+        <Circles />
         <div className=' mx-auto h-full text-center xl:text-left overflow-y-auto'>
             <div className=' container m-auto flex flex-col pb-5'>
                 {/* text & form */}

@@ -3,10 +3,12 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../helper/variants'
 // components
 import TestimonialSlider from '../components/TestimonialSlider'
+import Circles from '../components/Circles'
 
 const Testimonials = () => {
   return (
     <div className=' h-full bg-primary/30 text-center'>
+      <Circles />
       <div className=' w-full h-full pt-[150px] xl:pt-[100px] pb-20 xl:pb-0'>
         <div className=' h-full flex flex-col overflow-y-auto pb-0 mx-auto'>
           <div className=' container m-auto '>

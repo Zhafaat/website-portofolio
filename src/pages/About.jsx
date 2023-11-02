@@ -108,7 +108,7 @@ const About = () => {
     <div className=' h-full bg-primary/30 text-center xl:text-left'>
         <Circles />
         <div className=" w-full h-full pt-[150px] lg:pt-[100px] pb-20 xl:pb-3">
-          <div className=' mx-auto h-full flex- overflow-y-auto'>
+          <div className=' mx-auto h-full flex overflow-y-auto'>
             <div className=" container m-auto flex flex-col xl:flex-row gap-x-6">
               {/* text */}
               <div className=' flex-1 flex flex-col z-10'>
