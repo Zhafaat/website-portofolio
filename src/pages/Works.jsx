@@ -10,8 +10,8 @@ const Works = () => {
   return (
     <div className=' h-full bg-primary/30'>
         <Circles />
-        <div className=' h-full container mx-auto pt-[150px] lg:pt-[100px] pb-20 xl:pb-0'>
-            <div className=' h-full flex overflow-y-auto'>
+        <div className=' w-full h-full pt-[150px] lg:pt-[100px] pb-20 xl:pb-0'>
+            <div className=' mx-auto h-full flex overflow-y-auto'>
                 <div className=' container m-auto flex flex-col xl:flex-row gap-x-8 '>
                     {/* text */}
                     <div className=' text-center xl:text-left flex flex-col xl:w-[30vm] mb-4 xl:mb-0'>

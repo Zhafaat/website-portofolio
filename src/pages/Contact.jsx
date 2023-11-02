@@ -29,9 +29,9 @@ const Contact = () => {
 
 
   return (
-    <div className=' h-full bg-primary/30'>
-        <div className=' container mx-auto text-center xl:text-left h-full pt-[150px] xl:pt-[100px] pb-24 xl:pb-5'>
-            <div className=' h-full flex flex-col overflow-y-auto'>
+    <div className=' w-full h-full bg-primary/30 pt-[150px] xl:pt-[100px] pb-20 xl:pb-5'>
+        <div className=' mx-auto h-full text-center xl:text-left overflow-y-auto'>
+            <div className=' container m-auto flex flex-col pb-5'>
                 {/* text & form */}
                 <div className=' container m-auto w-full max-w-[700px]'>
                     {/* text */}
@@ -56,11 +56,11 @@ const Contact = () => {
                     >
                         {/* input group */}
                         <div className=' flex gap-x-6 w-full'>
-                            <input type="text" name='name' placeholder='name' className=' input' required />
-                            <input type="email" name='email' placeholder='email' className=' input' required/>
+                            <input type="text" name='name' placeholder='name' className=' input' autoComplete='off' required />
+                            <input type="email" name='email' placeholder='email' className=' input' autoComplete='off' required/>
                         </div>
-                        <input type="text" name='subject' placeholder='subject' className=' input' required/>
-                        <textarea name="message" id="message" placeholder='message' className=' textarea' required></textarea>
+                        <input type="text" name='subject' placeholder='subject' className=' input' autoComplete='off' required/>
+                        <textarea name="message" id="message" placeholder='message' className=' textarea' autoComplete='off' required></textarea>
                         <button type='submit' value="Send" className=' btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex flex-col items-center justify-center overflow-hidden hover:border-accent group'>
                             <span className=' group-hover:-translate-y-10 translate-y-3 group-hover:opacity-0 transition-all duration-500'>Let's talk</span>
                             <BsArrowRight className=' translate-y-10 opacity-0 group-hover:flex group-hover:-translate-y-3 group-hover:opacity-100 transition-all duration-500 text-[22px]' />
